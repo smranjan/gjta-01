@@ -7,11 +7,11 @@ variable "subnet_id" {
 }
 
 variable "region" {
-  default = "eu-west-2"
+  default = "ap-southeast-1"
 }
 
 variable "UNIQUE_ANIMAL_IDENTIFIER" {
-  default = "playground"
+  default = "mylabfs"
 }
 variable "ARTIFACT" {
   
