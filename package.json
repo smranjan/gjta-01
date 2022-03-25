@@ -16,7 +16,7 @@
     "schema-utils": "^2.7.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
