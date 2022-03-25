@@ -10,7 +10,7 @@ pipeline {
                 script {
                     sh """
                     npm install
-                    rpm run build
+                    npm run build
                     """
                 }
             }
