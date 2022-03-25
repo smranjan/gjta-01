@@ -4,7 +4,7 @@ pipelineJob("Deploy-React-App") {
         daysToKeep(5)
         numToKeep(20)
     }
-    concurrentBuild(allowConcurrentBuild = false)
+    concurrentBuild(allowConcurrentBuilds = false)
     triggers {
         scm("* * * * *") {
             ignorePostCommitHooks(ignorePostCommitHooks = false)
@@ -35,7 +35,7 @@ pipelineJob("Destroy-React-App") {
         daysToKeep(5)
         numToKeep(20)
     }
-    concurrentBuild(allowConcurrentBuild = false)
+    concurrentBuild(allowConcurrentBuilds = false)
     parameters {
         stringParam("UNIQUE_ANIMAL_IDENTIFIER", defaultValue = "mylabfs", description = "Your unique animal identifier for this playground")
     }
